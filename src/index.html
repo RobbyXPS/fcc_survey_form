@@ -1,0 +1,50 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main>
+  <h1 id="title">Lunch Survey!</h1>
+  <p id="description">Pick the lunch options you prefer. (<span class="asterisks">*</span> is required)</p>
+  <form id="survey-form" class="table-form">
+    <fieldset>
+      <legend>Employee Info:</legend>
+          <p class="table-p">
+    <label id="name-label" for="name" class="table-label"><span class="asterisks">*</span> Name:</label> <input id="name" type="text" class="table-input" placeholder="Enter first and last name" required></p>
+      <p class="table-p">
+    <label id="email-label" for="email" class="table-label"><span class="asterisks">*</span> Email:</label>
+        <input id="email" type="email" class="table-input" placeholder="Enter email" required></p>
+      <p class="table-p">
+    <label id="number-label" for="number" class="table-label"> <span class="asterisks">*</span> User ID:</label>
+    <input id="number" type="number" class="table-input" placeholder="Enter user ID" size="25" min="0001" max="5000" required></p></fieldset>
+    <fieldset>
+      <legend id="team-label">Team:</legend>
+    <select id="dropdown" name="teams">
+       <option disabled selected value> -- select an option -- </option>
+      <option value="team-green">Green Team!</option>
+      <option value="team-blue">Blue Team!</option>
+      <option value="team-red">Red Team!</option>
+      <option value="team-yellow">Yellow Team!</option>
+    </select></fieldset>
+    <fieldset>
+<legend id="lunch-builder-label">Build your lunch:</legend>
+<label id="sandwich-label" for="sandwich-options"><span class="asterisks">*</span> Sandwich:</label></input>
+    <input id="sandwich-builder-veggie" type="radio" name="sandwich-options" value="veggie" checked><label id="veggie-label" class="radio-label" for="sandwich-builder-veggie">Cream cheese & veggie bagel</label><br>
+<input id="sandwich-builder-ham-swiss" type="radio" name="sandwich-options" value="ham-swiss"><label class="radio-label" for="sandwich-builder-ham-swiss">Ham & swiss</label><br><input id="sandwich-builder-pbj" type="radio" name="sandwich-options" value="pbj"><label class="radio-label" for="sandwich-builder-pbj">PB&J</label><br>
+<label id="sides-label" for="side-builder"><span class="asterisks">*</span> Sides:</label>
+    <input id="side-builder-nuts" type="radio" name="sides-options" value="nuts" checked><label class="radio-label" for="side-builder-nuts">Mixed nuts</label><br>
+<input id="side-builder-chips" type="radio" name="sides-options" value="chips"><label class="radio-label" for="side-builder-chips">Chips</label><br>
+<label id="drink-label" for="drink-builder"><span class="asterisks">*</span> Drink:</label>
+<input id="drink-builder-water" type="radio" name="drink-builder" value="water" checked><label class="radio-label" for="drink-builder-water">Bottled water</label><br>
+<input id="drink-builder-soda" type="radio" name="drink-builder" value="soda"><label class="radio-label" for="drink-builder-soda">Soda</label><br>
+</fieldset>
+<fieldset>
+<legend>Feedback:</legend>
+  <p id="feedback-description">Select options you would like to see for next lunch:</p>
+<input id="feedback-option-01" name="feedback-option" type="checkbox" value="cheesesteak"><label class="checkbox-label" for="feeback-option-01">Cheesesteak</label><br>
+<input id="feedback-option-02" name="feedback-option" type="checkbox" value="club"><label class="checkbox-label" for="feedback-option-02">Club</label><br>
+<input id="feedback-option-03" name="feedback-option" type="checkbox" value="blt"><label class="checkbox-label" for="feedback-option-03">BLT</label><br>
+<input id="feedback-option-04" name="feedback-option" type="checkbox" value="hummus"><label class="checkbox-label" for="feedback-option-04">Hummus and mixed veggies</label><br>
+<input id="feedback-option-05" name="feedback-option" type="checkbox" value="fruit salad"><label class="checkbox-label" for="feedback-option-05">Fruit Salad</label><br>
+<input id="feedback-option-06" name="feedback-option" type="checkbox" value="cookie"><label class="checkbox-label" for="feedback-option-06">Cookie</label><br>
+<textarea id="allergy-feedback" placeholder="Please let us know if you have any allergies or additional comments."></textarea></fieldset>
+    <br><input id="submit" type="submit" value="LETS EAT!" >
+  </form>
+</main>

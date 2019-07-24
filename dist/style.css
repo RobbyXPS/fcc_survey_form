@@ -1,0 +1,85 @@
+h1, p, label, input, select, legend {
+  font-family: "Courier New", Monospace;
+  color: rgb(73, 44, 0)
+}
+
+legend { font-weight: bold }
+
+fieldset {
+  border-color: rgb(255, 184, 76);
+  margin: 2% auto
+}
+
+#title, #description {
+  max-width: 50%;
+  text-align: center
+}
+
+#survey-form {
+  max-width: 100%;
+  margin: 0% auto
+}
+
+#title { margin: 2% auto 0% }
+
+#description {
+  margin: .5% auto 4%;
+  font-size: 12px
+}
+
+main {
+  margin: 5%;
+  padding: 2%;
+  background-color: rgb(255, 248, 242)
+}
+
+html { background-color: rgb(255, 184, 76) }
+
+.table-form  { display: table }
+.table-p     { display: table-row }
+.table-label { display: table-cell }
+.table-input { display: table-cell; 
+               margin: 2px 0px 2px 5px;
+               width: 200px
+             }
+
+.radio-label, .checkbox-label {
+      margin: 0px 0px 0px 5px 
+}
+
+#sandwich-builder-veggie { margin: 0px 0px 0px 15px }
+
+#sandwich-builder-ham-swiss, #sandwich-builder-pbj, #drink-builder-soda { 
+  margin: 0px 0px 0px 124px 
+}
+
+#sandwich-builder-pbj, #side-builder-chips { 
+  margin: 0px 0px 20px 124px 
+}
+
+#side-builder-nuts, #drink-builder-water { 
+  margin: 0px 0px 0px 44px 
+}
+
+#allergy-feedback { margin: 25px auto 0px }
+
+#feedback-description { margin: 0px 0px 12px 0px }
+
+#submit {
+    width: 25em;
+    margin: 0 auto; 
+    display: block
+}
+
+#allergy-feedback {
+  margin: 5% auto 1%; 
+  display: block;
+  width: 100%;
+  height: 100px
+}
+
+.asterisks
+{
+    color: red;
+    font-weight: bold
+}
